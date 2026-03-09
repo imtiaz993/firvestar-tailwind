@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../output.css" />
   </head>
   <body
-    class="hidden max-h-dvh min-h-dvh w-360 origin-top-left overflow-hidden p-6"
+    class="hidden max-h-dvh min-h-dvh w-360 origin-top-left overflow-hidden p-6 flex-col justify-between"
     id="app-wrapper"
   >
     <div class="flex flex-col justify-between">
@@ -32,7 +32,7 @@
             <span class="text-5xl font-bold">1.</span>
             <span class="max-w-1/2 text-3xl font-medium text-wrap"
               >Essential Engine and the Five Star Award Program Introduction
-              <span class="text-normal text-xl">(couple minutes)</span>
+              <span class="text-xl font-light">(couple minutes)</span>
             </span>
           </li>
           <li>
@@ -40,10 +40,10 @@
               <span class="text-5xl font-bold">2.</span>
               <span class="max-w-1/2 text-3xl font-medium text-wrap">
                 Finalize Your Award Status
-                <span class="text-normal text-xl">(10 minutes)</span>
+                <span class="text-xl font-light">(10 minutes)</span>
               </span>
             </span>
-            <ul class="ml-24 list-disc text-2xl">
+            <ul class="ml-24 list-disc text-2xl font-light">
               <li>
                 Review the award selection process, criteria, and marketing
                 usage guidelines <span class="text-xl">(short video)</span>
@@ -65,7 +65,7 @@
                 Explore How to Best Leverage Your Award
               </span>
             </span>
-            <ul class="ml-24 list-disc text-2xl">
+            <ul class="ml-24 list-disc text-2xl font-light">
               <li>
                 Common tools and strategies to make the most of your achievement
               </li>
@@ -89,7 +89,7 @@
 
         const wrapper = document.getElementById("app-wrapper");
         wrapper.style.transform = "scale(" + scale + ")";
-        wrapper.style.display = "block";
+        wrapper.style.display = "flex";
       }
 
       window.addEventListener("resize", scalePage);

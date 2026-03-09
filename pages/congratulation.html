@@ -3,14 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Essential Engine -</title>
+    <title>Essential Engine - Congratulation</title>
     <link rel="shortcut icon" href="../public/favicon.ico" />
     <link rel="stylesheet" href="../output.css" />
   </head>
   <body
-    class="hidden max-h-dvh min-h-dvh w-360 origin-top-left overflow-hidden"
+    class="hidden max-h-dvh min-h-dvh w-360 origin-top-left overflow-hidden bg-[#0E1B3B]"
     id="app-wrapper"
   >
+    <section class="flex h-dvh flex-col justify-between text-white">
+      <div class="flex flex-1 items-center justify-center">
+        <div class="space-y-8 px-10">
+          <h1 class="text-9xl font-bold">Congratulations!</h1>
+
+          <div class="relative z-50">
+            <div class="relative z-50 w-full bg-[#F0592B] p-6">
+              <p class="line-clamp-2 text-center text-4xl font-extralight">
+                You have been officially certified as a
+                <br />
+                <span class="font-bold">
+                  2026 Five Star Real Estate Agent winner.
+                </span>
+              </p>
+            </div>
+
+            <div
+              class="absolute top-1/2 left-1/2 z-0 h-20 w-260 -translate-x-1/2 -translate-y-1/2 transform border-3 border-white"
+            ></div>
+          </div>
+
+          <h2 class="text-center text-7xl font-semibold">5 YEAR WINNER</h2>
+        </div>
+      </div>
+
+      <div class="mb-10 ml-10 py-4">
+        <img src="../public/eelogo.png" alt="awardlogo" class="max-w-48" />
+      </div>
+    </section>
     <script>
       function scalePage() {
         const baseWidth = 1440;
