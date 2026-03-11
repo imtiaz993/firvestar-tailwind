@@ -7,18 +7,364 @@
     <link rel="shortcut icon" href="../public/favicon.ico" />
     <link rel="stylesheet" href="../output.css" />
   </head>
-  <body
-    class="hidden max-h-dvh min-h-dvh w-384 origin-top-left overflow-hidden"
-    id="app-wrapper"
-  >
+  <body class="max-h-dvh min-h-dvh overflow-hidden">
+    <div
+      id="clip-path"
+      style="clip-path: polygon(0 0, 5% 0, 12% 100%, 0% 100%)"
+      class="absolute top-0 bottom-0 left-0 z-10 h-full w-full bg-[#0389A0]"
+    ></div>
+    <div
+      id="clip-path"
+      style="clip-path: polygon(0 0, 12% 0, 0 100%, 0% 100%)"
+      class="absolute top-0 bottom-0 left-0 z-10 h-full w-full bg-[#F0592B]"
+    ></div>
+
+    <div
+      class="hidden max-h-dvh min-h-dvh w-384 origin-top-left overflow-hidden"
+      id="app-wrapper"
+    >
+      <section
+        class="absolute top-6 ml-20 z-10 max-w-180 bg-[#0389A0] px-7 py-6 text-white shadow-md shadow-black"
+        style="left: 200px"
+      >
+        <div class="flex gap-4">
+          <div class="border-4 border-white"></div>
+          <h1 class="text-start text-2xl text-white">
+            How do you go about marketing your business today?
+          </h1>
+        </div>
+      </section>
+      <main>
+        <div class="mt-20 ml-30 h-screen px-18 py-8">
+          <div class="mb-2 flex justify-end">
+            <img src="../public/eelogo.png" alt="eelogo" class="max-w-48" />
+          </div>
+          <div
+            class="grid grid-cols-[23rem_8.5rem_8.5rem_8.5rem_8.5rem_17rem] gap-x-5 gap-y-5 mt-2"
+          >
+            <div class="pt-3 text-[1.05rem] font-medium text-[#4A4A4A]">
+              Your content strategy/mix
+            </div>
+
+            <label class="flex items-start gap-3">
+              <input
+                type="checkbox"
+                class="mt-1 h-8 w-8 rounded-sm border-[3px] border-[#909090] bg-transparent"
+              />
+              <span
+                class="text-[0.98rem] leading-snug font-medium text-[#4A4A4A]"
+              >
+                Industry/
+                <br />
+                Profession related
+              </span>
+            </label>
+
+            <label class="flex items-start gap-3">
+              <input
+                type="checkbox"
+                class="mt-1 h-8 w-8 rounded-sm border-[3px] border-[#909090] bg-transparent"
+              />
+              <span
+                class="mt-2 text-[0.98rem] leading-snug font-medium text-[#4A4A4A]"
+              >
+                Lifestyle
+              </span>
+            </label>
+
+            <label class="col-span-2 flex items-start gap-3">
+              <input
+                type="checkbox"
+                class="mt-1 h-8 w-8 rounded-sm border-[3px] border-[#909090] bg-transparent"
+              />
+              <span
+                class="text-[0.98rem] leading-snug font-medium text-[#4A4A4A]"
+              >
+                Personal
+                <br />
+                (helping clients to get to know me)
+              </span>
+            </label>
+
+            <div></div>
+
+            <div></div>
+
+            <div
+              class="text-center text-[0.86rem] leading-snug font-semibold text-[#555555]"
+            >
+              I don't do this kind of marketing.
+            </div>
+
+            <div
+              class="text-center text-[0.86rem] leading-snug font-semibold text-[#555555]"
+            >
+              I do it myself.
+            </div>
+
+            <div
+              class="text-center text-[0.86rem] leading-snug font-semibold text-[#555555]"
+            >
+              My company does it.
+            </div>
+
+            <div
+              class="text-center text-[0.86rem] leading-snug font-semibold text-[#555555]"
+            >
+              I outsource this.
+            </div>
+
+            <div
+              class="text-[0.9rem] leading-snug font-semibold text-[#555555]"
+            >
+              Name of Outsourced Service
+            </div>
+
+            <div class="pt-1 text-[1.05rem] font-medium text-[#4A4A4A]">
+              Social Media Marketing
+            </div>
+            <div class="flex items-center justify-center">
+              <input
+                type="checkbox"
+                name="social-media-marketing"
+                class="h-8 w-8 rounded-sm border-[3px] border-[#909090] bg-transparent"
+              />
+            </div>
+            <div class="flex items-center justify-center">
+              <input
+                type="checkbox"
+                name="social-media-myself"
+                class="h-8 w-8 rounded-sm border-[3px] border-[#909090] bg-transparent"
+              />
+            </div>
+            <div class="flex items-center justify-center">
+              <input
+                type="checkbox"
+                name="social-media-company"
+                class="h-8 w-8 rounded-sm border-[3px] border-[#909090] bg-transparent"
+              />
+            </div>
+            <div class="flex items-center justify-center">
+              <input
+                type="checkbox"
+                name="social-media-outsource"
+                class="h-8 w-8 rounded-sm border-[3px] border-[#909090] bg-transparent"
+              />
+            </div>
+            <div class="flex items-center">
+              <input
+                type="text"
+                name="social-media-service"
+                class="h-9 w-auto rounded-sm border-2 border-[#909090] bg-transparent px-3 outline-none"
+              />
+            </div>
+
+            <div class="pt-1 text-[1.05rem] font-medium text-[#4A4A4A]">
+              E-Newsletter
+            </div>
+            <div class="flex items-center justify-center">
+              <input
+                type="checkbox"
+                name="enewsletter-no"
+                class="h-8 w-8 rounded-sm border-[3px] border-[#909090] bg-transparent"
+              />
+            </div>
+            <div class="flex items-center justify-center">
+              <input
+                type="checkbox"
+                name="enewsletter-myself"
+                class="h-8 w-8 rounded-sm border-[3px] border-[#909090] bg-transparent"
+              />
+            </div>
+            <div class="flex items-center justify-center">
+              <input
+                type="checkbox"
+                name="enewsletter-company"
+                class="h-8 w-8 rounded-sm border-[3px] border-[#909090] bg-transparent"
+              />
+            </div>
+            <div class="flex items-center justify-center">
+              <input
+                type="checkbox"
+                name="enewsletter-outsource"
+                class="h-8 w-8 rounded-sm border-[3px] border-[#909090] bg-transparent"
+              />
+            </div>
+            <div class="flex items-center">
+              <input
+                type="text"
+                name="enewsletter-service"
+                class="h-9 w-auto rounded-sm border-2 border-[#909090] bg-transparent px-3 outline-none"
+              />
+            </div>
+
+            <div class="pt-1 text-[1.05rem] font-medium text-[#4A4A4A]">
+              Postcard direct mail
+            </div>
+            <div class="flex items-center justify-center">
+              <input
+                type="checkbox"
+                name="postcard-no"
+                class="h-8 w-8 rounded-sm border-[3px] border-[#909090] bg-transparent"
+              />
+            </div>
+            <div class="flex items-center justify-center">
+              <input
+                type="checkbox"
+                name="postcard-myself"
+                class="h-8 w-8 rounded-sm border-[3px] border-[#909090] bg-transparent"
+              />
+            </div>
+            <div class="flex items-center justify-center">
+              <input
+                type="checkbox"
+                name="postcard-company"
+                class="h-8 w-8 rounded-sm border-[3px] border-[#909090] bg-transparent"
+              />
+            </div>
+            <div class="flex items-center justify-center">
+              <input
+                type="checkbox"
+                name="postcard-outsource"
+                class="h-8 w-8 rounded-sm border-[3px] border-[#909090] bg-transparent"
+              />
+            </div>
+            <div class="flex items-center">
+              <input
+                type="text"
+                name="postcard-service"
+                class="h-9 w-auto rounded-sm border-2 border-[#909090] bg-transparent px-3 outline-none"
+              />
+            </div>
+
+            <div class="pt-1 text-[1.05rem] font-medium text-[#4A4A4A]">
+              Personal magazine direct mail
+            </div>
+            <div class="flex items-center justify-center">
+              <input
+                type="checkbox"
+                name="magazine-no"
+                class="h-8 w-8 rounded-sm border-[3px] border-[#909090] bg-transparent"
+              />
+            </div>
+            <div class="flex items-center justify-center">
+              <input
+                type="checkbox"
+                name="magazine-myself"
+                class="h-8 w-8 rounded-sm border-[3px] border-[#909090] bg-transparent"
+              />
+            </div>
+            <div class="flex items-center justify-center">
+              <input
+                type="checkbox"
+                name="magazine-company"
+                class="h-8 w-8 rounded-sm border-[3px] border-[#909090] bg-transparent"
+              />
+            </div>
+            <div class="flex items-center justify-center">
+              <input
+                type="checkbox"
+                name="magazine-outsource"
+                class="h-8 w-8 rounded-sm border-[3px] border-[#909090] bg-transparent"
+              />
+            </div>
+            <div class="flex items-center">
+              <input
+                type="text"
+                name="magazine-service"
+                class="h-9 w-auto rounded-sm border-2 border-[#909090] bg-transparent px-3 outline-none"
+              />
+            </div>
+
+            <div class="pt-1 text-[1.05rem] font-medium text-[#4A4A4A]">
+              Testimonial - capture and broadcasting
+            </div>
+            <div class="flex items-center justify-center">
+              <input
+                type="checkbox"
+                name="testimonial-no"
+                class="h-8 w-8 rounded-sm border-[3px] border-[#909090] bg-transparent"
+              />
+            </div>
+            <div class="flex items-center justify-center">
+              <input
+                type="checkbox"
+                name="testimonial-myself"
+                class="h-8 w-8 rounded-sm border-[3px] border-[#909090] bg-transparent"
+              />
+            </div>
+            <div class="flex items-center justify-center">
+              <input
+                type="checkbox"
+                name="testimonial-company"
+                class="h-8 w-8 rounded-sm border-[3px] border-[#909090] bg-transparent"
+              />
+            </div>
+            <div class="flex items-center justify-center">
+              <input
+                type="checkbox"
+                name="testimonial-outsource"
+                class="h-8 w-8 rounded-sm border-[3px] border-[#909090] bg-transparent"
+              />
+            </div>
+            <div class="flex items-center">
+              <input
+                type="text"
+                name="testimonial-service"
+                class="h-9 w-auto rounded-sm border-2 border-[#909090] bg-transparent px-3 outline-none"
+              />
+            </div>
+
+            <div class="pt-1 text-[1.05rem] font-medium text-[#4A4A4A]">
+              Other in or out of network referral/lead programs
+            </div>
+
+            <label class="col-span-2 flex items-center justify-center gap-3">
+              <span class="text-[0.95rem] font-semibold text-[#555555]"
+                >No</span
+              >
+              <input
+                type="checkbox"
+                name="referral-programs-no"
+                class="h-8 w-8 rounded-sm border-[3px] border-[#909090] bg-transparent"
+              />
+            </label>
+
+            <label class="col-span-2 flex items-center justify-center gap-3">
+              <span class="text-[0.95rem] font-semibold text-[#555555]"
+                >Yes</span
+              >
+              <input
+                type="checkbox"
+                name="referral-programs-yes"
+                class="h-8 w-8 rounded-sm border-[3px] border-[#909090] bg-transparent"
+              />
+            </label>
+
+            <div class="flex items-center">
+              <input
+                type="text"
+                name="referral-programs-services"
+                placeholder="Name of services"
+                class="h-9 w-auto rounded-sm border-2 border-[#909090] bg-transparent px-3 text-[0.95rem] text-[#777777] outline-none placeholder:text-[#777777]"
+              />
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
     <script>
       function scalePage() {
         const baseWidth = 1536;
         const scale = window.innerWidth / baseWidth;
 
         const wrapper = document.getElementById("app-wrapper");
+        const clipPath = document.getElementById("clip-path");
+
         wrapper.style.transform = "scale(" + scale + ")";
         wrapper.style.display = "block";
+        clipPath.style.display = "block";
       }
 
       window.addEventListener("resize", scalePage);
